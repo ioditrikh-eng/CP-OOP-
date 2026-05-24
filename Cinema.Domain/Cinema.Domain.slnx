@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../Cinema.Tests/Cinema.Tests.csproj" />
+  <Project Path="../Cinema.Web/Cinema.Web.csproj" Id="6fb86e4f-f252-467b-a3b6-c5c06185228a" />
+  <Project Path="Cinema.Domain.csproj" />
+</Solution>
