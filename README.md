@@ -17,16 +17,16 @@
 
 ##  Структура проєкту
 CinemaManagement/
-├── Cinema.Domain/ # Бібліотека класів предметної області (ООП, SOLID)
-│ ├── Models/ # Класи: User, Admin, Guest, Movie, Hall, Seat, Session, Ticket
-│ ├── Interfaces/ # IJsonSerializable, IPriceCalculator, ITicketRepository
-│ └── Services/ # TicketService (делегати, події)
-├── Cinema.Tests/ # Unit-тести (MSTest)
-├── Cinema.Web/ # Веб-застосунок ASP.NET Core MVC
-│ ├── Controllers/ # Home, Sessions, Tickets, Admin
-│ ├── Views/ # Razor-сторінки
-│ ├── wwwroot/ # Статичні файли (CSS, JS, data/cinema.json)
-│ └── Program.cs
+├── Cinema.Domain/                 # Бібліотека класів предметної області (ООП, SOLID)
+│   ├── Models/                    # Класи: User, Admin, Guest, Movie, Hall, Seat, Session, Ticket
+│   ├── Interfaces/                # IJsonSerializable, IPriceCalculator, ITicketRepository
+│   └── Services/                  # TicketService (делегати, події)
+├── Cinema.Tests/                  # Unit-тести (MSTest)
+├── Cinema.Web/                    # Веб-застосунок ASP.NET Core MVC
+│   ├── Controllers/               # Home, Sessions, Tickets, Admin
+│   ├── Views/                     # Razor-сторінки
+│   ├── wwwroot/                   # Статичні файли (CSS, JS, data/cinema.json)
+│   └── Program.cs
 └── README.md
 
 
