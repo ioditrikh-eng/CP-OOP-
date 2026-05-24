@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Cinema.Domain.Movie>
+<h1>Фільми</h1>
+@foreach (var movie in Model)
+{
+    <div>
+        <h3>@movie.Title</h3>
+        <p>@movie.Genre, @movie.DurationMinutes хв</p>
+        <a asp-controller="Sessions" asp-action="Index" asp-route-movieId="@movie.Id">Сеанси</a>
+    </div>
+}

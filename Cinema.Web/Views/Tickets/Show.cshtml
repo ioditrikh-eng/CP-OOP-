@@ -1,0 +1,8 @@
+﻿@model Cinema.Domain.Ticket
+<h1>Квиток</h1>
+<p>Фільм: @Model.Session.Movie.Title</p>
+<p>Дата/час: @Model.Session.DateTime</p>
+<p>Місце: ряд @Model.Seat.Row, місце @Model.Seat.Number</p>
+<p>Покупець: @Model.BuyerName</p>
+<p>Ціна: @Model.Price грн</p>
+<p>QR-код: @Model.QrCode</p>

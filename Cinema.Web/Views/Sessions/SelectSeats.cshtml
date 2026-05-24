@@ -1,0 +1,9 @@
+﻿@model Cinema.Domain.Session
+<h1>Вибір місць для @Model.Movie.Title</h1>
+<form asp-controller="Tickets" asp-action="Buy" method="post">
+    <input type="hidden" name="sessionId" value="@Model.Id" />
+    <p>Ряд: <input type="number" name="row" min="1" max="@Model.Hall.Rows" /></p>
+    <p>Місце: <input type="number" name="number" min="1" max="@Model.Hall.SeatsPerRow" /></p>
+    <p>Ваше ім'я: <input type="text" name="buyerName" required /></p>
+    <button type="submit">Купити</button>
+</form>

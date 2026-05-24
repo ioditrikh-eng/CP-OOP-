@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Cinema.Domain.Session>
+<h1>Сеанси</h1>
+@foreach (var session in Model)
+{
+    <div>
+        <p>Зал @session.Hall.Number, @session.DateTime.ToString("dd.MM.yyyy HH:mm"), @session.BasePrice грн</p>
+        <a asp-controller="Sessions" asp-action="SelectSeats" asp-route-sessionId="@session.Id">Вибрати місця</a>
+    </div>
+}
